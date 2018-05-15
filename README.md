@@ -1,1 +1,1 @@
-# collaborativeProject_PlanC
+# Sean's Final: boxoffice project

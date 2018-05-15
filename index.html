@@ -2,18 +2,19 @@
 <html lang="en">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<title>CSC 175-176 Collaboration</title>
+	<title>Top boxoffice films</title>
 	
-	<link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="dist/css/lightbox.min.css">
 </head>
 <body>
-<nav class="navbar navbar-default">
+<nav class="navbar">
 	<div class="container">
 		<!-- Collect the nav links -->
-		<a class="navbar-brand" href="#">Web Store</a>
-		<ul class="nav navbar-nav">
+		<a class="navbar-title" href="#">Box Office</a>
+		<ul class="navbar-list">
 			<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-			<li><a href="products.html">Products </a></li>
+			<li><a href="movies.html">Movies </a></li>
 		</ul>
 	</div>
 	<!-- /.container-fluid -->
@@ -21,30 +22,16 @@
 
 <div class="container">
 	
-	<div class="row">
-		<div class="col-md-12">
-			
-			<ul id="features">
-				<li><a id="feature-1" href="#" data-target="feature-one">Featured Product 1</a></li>
-				<li><a id="feature-2" href="#" data-target="feature-two">Featured Product 2</a></li>
-				<li><a id="feature-3" href="#" data-target="feature-three">Featured Product 3</a></li>
-			</ul>
-			
-		</div>
-	</div>
-	
-	<div id="feature-container" class="row feature-info">
-		<div class="col-md-12">
-			<img src="" id="feature-image" alt="FEATURED IMAGE" height="42" width="42">
-			<h1 id="feature-title">TITLE</h1>
-			<p id="feature-desc">DESCRIPTION</p>
-		</div>
-	</div>
+	<div>
+      <a href="images/film-reel.jpg" data-lightbox="example-set"><img src="images/film-reel-small.jpg" alt=""/></a>
+      <a href="images/auditorium.jpg" data-lightbox="example-set"><img src="images/auditorium-small.jpg" alt="" /></a>
+      <a href="images/wall-e.jpg" data-lightbox="example-set"><img src="images/wall-e-small.jpg" alt="" /></a>
+    </div>
 	
 </div>
 	
 <!-- JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.js" type="text/javascript"></script>
-<script src="featuredprods.js" type="text/javascript"></script>
+<script src="dist/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
