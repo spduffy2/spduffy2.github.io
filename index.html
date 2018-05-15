@@ -10,14 +10,12 @@
 <body>
 <nav class="navbar">
 	<div class="container">
-		<!-- Collect the nav links -->
 		<a class="navbar-title" href="#">Box Office</a>
 		<ul class="navbar-list">
 			<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
 			<li><a href="movies.html">Movies </a></li>
 		</ul>
 	</div>
-	<!-- /.container-fluid -->
 </nav>
 
 <div class="container">
@@ -27,11 +25,52 @@
       <a href="images/auditorium.jpg" data-lightbox="example-set"><img src="images/auditorium-small.jpg" alt="" /></a>
       <a href="images/wall-e.jpg" data-lightbox="example-set"><img src="images/wall-e-small.jpg" alt="" /></a>
     </div>
+
+    <h1>Buy movie tickets</h1>
+    <form action="form.html" method="get"
+		name="movie_form" id="movie_form">
+		<fieldset>
+	    	<legend>Personal Information</legend>
+	    	<label for="email">Email Address:</label>
+	    	<input type="text" id="email" name="email"><br>
+	    	<label for="first_name">First Name:</label>
+			<input type="text" id="first_name" name="first_name"><br>
+			<label for="last_name">Last Name:</label>
+			<input type="text" id="last_name" name="last_name"><br>
+		</fieldset>
+		<fieldset>
+			<legend>Movie Ticket Information</legend>
+			<label for="movie_date">Movie Date:</label>
+			<input type="text" id="movie_date" name="movie_date"><br>
+			<label><input type="checkbox"> Closed Captioning</label><br><br>
+			Movie Type:
+			<div>
+				<input type="radio" name="type" value="standard" checked> Standard<br>
+				<input type="radio" name="type" value="3d"> 3D<br>
+				<input type="radio" name="type" value="imax"> Imax<br>
+				<input type="radio" name="type" value="imax3d"> Imax 3D<br>
+			</div> <br>
+			Movie:
+			<select name="movies">
+				<option value="avengers">Avengers: Infinity War</option>
+				<option value="isle-of-dogs">Isle of Dogs</option>
+				<option value="deadpool">Deadpool 2</option>
+			</select><br>
+			<label for="comment">Share any comments:</label>
+			<input type="text" id="comment" name="comment"><br>
+		</fieldset>
+		<fieldset id="buttons">
+			<legend>Submit Your Membership</legend>
+			<label>&nbsp;</label>
+			<input type="submit" id="submit" name="submit" value="Submit">
+			<input type="reset" id="reset" name="reset" value="Reset"><br>
+		</fieldset>
+	</form>
 	
 </div>
 	
-<!-- JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.js" type="text/javascript"></script>
 <script src="dist/js/lightbox-plus-jquery.min.js"></script>
+<script src="form.js"></script>
 </body>
 </html>

@@ -33,3 +33,6 @@ a {
 .active{
 	background-color: #DD5C5C;
 }
+input{
+	margin: 5px;
+}
