@@ -1,3 +1,1 @@
-Sean Duffy
-
-# Sp18-SeanDuffy
+# collaborativeProject_PlanC
